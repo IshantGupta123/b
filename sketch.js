@@ -73,7 +73,13 @@ function draw() {
  
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
-
+  if(keyCode===LEFT_ARROW){
+  helicopterSprite.x=helicopterSprite.x+0.1;
+  }
+  if(keyCode===DOWN_ARROW){	
+  Matter.Body.setStatic(packageSprite>,false)
+  
+  }
   
   drawSprites();
   
